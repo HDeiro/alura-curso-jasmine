@@ -1,0 +1,22 @@
+{
+  "name": "alura-curso-jasmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HDeiro/alura-curso-jasmine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HDeiro/alura-curso-jasmine/issues"
+  },
+  "homepage": "https://github.com/HDeiro/alura-curso-jasmine#readme",
+  "devDependencies": {
+    "jasmine": "^3.2.0"
+  }
+}
