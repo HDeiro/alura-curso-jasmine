@@ -1,4 +1,4 @@
-import {NumberSequence} from '../src/NumberSequence';
+import {NumberSequence} from '../../src/case1/NumberSequence';
 
 describe("NumberSequence.js", () => {
     it("Must work with random numbers and", () => {
