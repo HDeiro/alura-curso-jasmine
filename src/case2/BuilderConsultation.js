@@ -10,7 +10,7 @@ export class BuilderConsultation {
     }
 
     build() {
-        return new Consultation(this._patient, this._procedures, this._isPrivate, this._isReturn);
+        return new Consultation(this._patient, this._procedures, this._isPrivate, this._isReturn, this._date);
     }
 
     withPatient(patient) {
@@ -30,6 +30,11 @@ export class BuilderConsultation {
 
     withIsReturn(isReturn) {
         this._isReturn = isReturn;
+        return this;
+    }
+
+    withDate(date) {
+        this._date = date;
         return this;
     }
 }

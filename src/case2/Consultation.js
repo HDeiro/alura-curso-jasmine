@@ -1,9 +1,10 @@
 export class Consultation {
-    constructor(patient, procedures, isPrivate, isReturn) {
-        this._patient = patient;
-        this._procedures = procedures;
-        this._isPrivate = isPrivate;
-        this._isReturn = isReturn;
+    constructor(patient, procedures, isPrivate, isReturn, date) {
+        this.setPatient(patient);
+        this.setProcedures(procedures);
+        this.setIsPrivate(isPrivate);
+        this.setIsReturn(isReturn);
+        this.setDate(date);
     }
 
     getPrice() {
@@ -25,5 +26,45 @@ export class Consultation {
             finalPrice *= 2;
 
         return finalPrice;
+    }
+
+    getPatient() {
+        return this._patient;
+    }
+
+    setPatient(patient) {
+        this._patient = patient;
+    }
+
+    getProcedures() {
+        return this._procedures;
+    }
+
+    setProcedures(procedures) {
+        this._procedures = procedures;
+    }
+
+    getIsPrivate() {
+        return this._isPrivate;
+    }
+
+    setIsPrivate(isPrivate) {
+        this._isPrivate = isPrivate;
+    }
+
+    getIsReturn() {
+        return this._isReturn;
+    }
+
+    setIsReturn(isReturn) {
+        this._isReturn = isReturn;
+    }
+
+    getDate() {
+        return this._date;
+    }
+
+    setDate(date) {
+        this._date = date;
     }
 }
